@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>elrojoyainer — Párchese 0 estrés</title>
-  <meta name="description" content="Yainer — Creador de contenido, sketches, blogs y producción audiovisual desde Pamplona, Colombia.">
-  <meta name="theme-color" content="#C67B5C">
-  <meta property="og:title" content="elrojoyainer — Creador de contenido">
-  <meta property="og:description" content="Párchese 0 estrés. Sketches, blogs, ocurrencias y producción audiovisual.">
-  <meta property="og:image" content="assets/og-image.jpg">
+  <title>Yainer — Creador de Contenido | Pamplona, Colombia</title>
+  <meta name="description" content="Yainer — Sketches, blogs, producción audiovisual. Párchese 0 estrés. Creador de contenido desde Pamplona, Colombia.">
+  <meta name="theme-color" content="#E8586B">
+  <meta property="og:title" content="Yainer — Creador de Contenido">
+  <meta property="og:description" content="Sketches, blogs, producción audiovisual. Párchese 0 estrés.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
@@ -16,186 +15,229 @@
 <body>
 
   <!-- ====== NAV ====== -->
-  <nav class="nav" id="nav">
+  <nav class="nav">
     <div class="nav-inner">
-      <a href="#home" class="nav-logo">elrojoyainer</a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
-        <span></span><span></span><span></span>
-      </button>
+      <a href="#" class="nav-logo">Yainer</a>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#fotos">Fotos</a></li>
+        <li><a href="#home">Inicio</a></li>
         <li><a href="#videos">Videos</a></li>
-        <li><a href="#redes">Redes</a></li>
+        <li><a href="#about">Sobre mí</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
+      <a href="#redes" class="nav-cta">Sígueme</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menú"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
   <!-- ====== HERO ====== -->
-  <header class="hero" id="home">
-    <div class="hero-content">
-      <div class="hero-img-wrapper">
-        <img
-          src="assets/yainer-profile.svg"
-          alt="Yainer — elrojoyainer"
-          class="hero-img"
-          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
-        >
-        <div class="hero-img-fallback" style="display:none">
-          <span>🎬</span>
+  <section class="hero" id="home">
+    <div class="hero-wave-top"></div>
+    <div class="hero-container">
+      <div class="hero-text">
+        <div class="hero-badge">✨ Creador de Contenido</div>
+        <h1 class="hero-title">
+          Soy <span class="hero-name">Yainer</span><br>
+          <span class="hero-subtitle">Sketches, Blogs & Producción Audiovisual</span>
+        </h1>
+        <p class="hero-desc">
+          De Pamplona, Colombia. Creo contenido que saca sonrisas, cuenta historias
+          y le pone buena vibra al feed. Mi filosofía: <strong>párchese 0 estrés</strong>.
+        </p>
+        <div class="hero-btns">
+          <a href="#videos" class="btn btn-primary">Ver mi contenido</a>
+          <a href="#contacto" class="btn btn-outline">Contactar</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-num">3</span>
+            <span class="hero-stat-label">Cuentas IG</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">+250</span>
+            <span class="hero-stat-label">Seguidores</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">21</span>
+            <span class="hero-stat-label">Posts</span>
+          </div>
         </div>
       </div>
-      <h1 class="hero-name">Yainer</h1>
-      <p class="hero-tagline">Párchese 0 estrés</p>
-      <p class="hero-sub">
-        Sketches &bull; Blogs &bull; Ocurrencias<br>
-        Producción Audiovisual &bull; Pamplona, Colombia
-      </p>
-      <div class="hero-cta">
-        <a href="#fotos" class="btn btn-primary">Ver portafolio</a>
-        <a href="#contacto" class="btn btn-outline">Contactar</a>
+      <div class="hero-img-wrap">
+        <div class="hero-img-glow"></div>
+        <img src="assets/yainer-profile.svg" alt="Yainer" class="hero-img" onerror="this.style.opacity='0.3'">
+        <div class="hero-float-badge">
+          <span class="hero-float-dot"></span>
+          <span>🟢 Creando ahora</span>
+        </div>
       </div>
     </div>
-  </header>
-
-  <!-- ====== ABOUT ====== -->
-  <section class="about" id="about">
-    <div class="container">
-      <h2 class="section-title">¿Quién soy?</h2>
-      <p class="about-text">
-        Soy Yainer, creador de contenido de Pamplona, Colombia. Me muevo entre el humor,
-        los sketches, los blogs y la producción audiovisual. Mi filosofía es simple:
-        <strong>párchese 0 estrés</strong>. Si algo no fluye, no es por ahí.
-      </p>
-      <p class="about-text">
-        Me encuentras en tres sabores: <em>@yainer_stvn</em> (el original),
-        <em>@yainer_audiovisual</em> (el que graba y edita),
-        y <em>@elrojoyainer</em> (el artista).
-      </p>
-    </div>
+    <div class="hero-wave-bot"></div>
   </section>
 
-  <!-- ====== FOTOS ====== -->
-  <section class="gallery" id="fotos">
+  <!-- ====== REDES SOCIALES ====== -->
+  <section class="social-bar" id="redes">
     <div class="container">
-      <h2 class="section-title">Fotos</h2>
-      <p class="section-sub">Momentos capturados. Dale clic a cualquiera para ver en grande.</p>
-      <div class="gallery-grid">
-        <div class="gallery-item">
-          <div class="gallery-placeholder">📸</div>
-          <span>Foto 1</span>
+      <div class="social-cards">
+        <!-- Instagram principal -->
+        <div class="social-card">
+          <div class="social-card-top">
+            <span class="social-icon-svg">
+              <svg viewBox="0 0 24 24" width="28" height="28"><defs><linearGradient id="ig"><stop offset="0%" stop-color="#F58529"/><stop offset="50%" stop-color="#DD2A7B"/><stop offset="100%" stop-color="#8134AF"/></linearGradient></defs><rect x="2" y="2" width="20" height="20" rx="5" fill="url(#ig)"/><circle cx="12" cy="12" r="5" fill="white" stroke="url(#ig)" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="white"/></svg>
+            </span>
+            <span class="social-card-name">@yainer_stvn</span>
+            <span class="social-card-label">Instagram</span>
+          </div>
+          <span class="social-card-count">Personal</span>
+          <a href="https://www.instagram.com/yainer_stvn/" target="_blank" rel="noopener" class="social-card-btn">Seguir</a>
         </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder">🌆</div>
-          <span>Foto 2</span>
+        <!-- Instagram audiovisual -->
+        <div class="social-card">
+          <div class="social-card-top">
+            <span class="social-icon-svg">
+              <svg viewBox="0 0 24 24" width="28" height="28"><defs><linearGradient id="ig2"><stop offset="0%" stop-color="#F58529"/><stop offset="50%" stop-color="#DD2A7B"/><stop offset="100%" stop-color="#8134AF"/></linearGradient></defs><rect x="2" y="2" width="20" height="20" rx="5" fill="url(#ig2)"/><circle cx="12" cy="12" r="5" fill="white" stroke="url(#ig2)" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="white"/></svg>
+            </span>
+            <span class="social-card-name">@yainer_audiovisual</span>
+            <span class="social-card-label">Instagram</span>
+          </div>
+          <span class="social-card-count">Audiovisual</span>
+          <a href="https://www.instagram.com/yainer_audiovisual/" target="_blank" rel="noopener" class="social-card-btn">Seguir</a>
         </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder">🎭</div>
-          <span>Foto 3</span>
+        <!-- Instagram artístico -->
+        <div class="social-card">
+          <div class="social-card-top">
+            <span class="social-icon-svg">
+              <svg viewBox="0 0 24 24" width="28" height="28"><defs><linearGradient id="ig3"><stop offset="0%" stop-color="#F58529"/><stop offset="50%" stop-color="#DD2A7B"/><stop offset="100%" stop-color="#8134AF"/></linearGradient></defs><rect x="2" y="2" width="20" height="20" rx="5" fill="url(#ig3)"/><circle cx="12" cy="12" r="5" fill="white" stroke="url(#ig3)" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="white"/></svg>
+            </span>
+            <span class="social-card-name">@elrojoyainer</span>
+            <span class="social-card-label">Instagram</span>
+          </div>
+          <span class="social-card-count">Arte & Sketches</span>
+          <a href="https://www.instagram.com/elrojoyainer/" target="_blank" rel="noopener" class="social-card-btn">Seguir</a>
         </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder">🏔️</div>
-          <span>Foto 4</span>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder">🎨</div>
-          <span>Foto 5</span>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder">✨</div>
-          <span>Foto 6</span>
+        <!-- Facebook -->
+        <div class="social-card">
+          <div class="social-card-top">
+            <span class="social-icon-svg" style="background:#1877F2;width:28px;height:28px;border-radius:6px;display:flex;align-items:center;justify-content:center;color:white;font-weight:bold;font-size:18px">f</span>
+            <span class="social-card-name">Yainer Conde</span>
+            <span class="social-card-label">Facebook</span>
+          </div>
+          <span class="social-card-count">Conecta</span>
+          <a href="https://www.facebook.com/profile.php?id=61581500931484" target="_blank" rel="noopener" class="social-card-btn fb-btn">Seguir</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ====== VIDEOS ====== -->
-  <section class="videos" id="videos">
+  <section class="videos-section" id="videos">
     <div class="container">
-      <h2 class="section-title">Videos</h2>
-      <p class="section-sub">Sketches, reels y producción audiovisual.</p>
-      <div class="video-grid">
+      <h2 class="section-title">🎬 Últimos Videos</h2>
+      <p class="section-sub">Sketches, reels y producción audiovisual desde Pamplona.</p>
+      <div class="video-carousel">
         <div class="video-card">
-          <div class="video-placeholder">
-            <span>▶</span>
+          <div class="video-thumb">
+            <div class="video-play">▶</div>
+            <span class="video-platform">Instagram Reel</span>
           </div>
-          <div class="video-info">
-            <h3>Sketch 1</h3>
-            <p>Próximamente en el feed</p>
-          </div>
+          <h4>Sketch: El amigo que solo...</h4>
+          <span class="video-views">Próximamente</span>
         </div>
         <div class="video-card">
-          <div class="video-placeholder">
-            <span>▶</span>
+          <div class="video-thumb">
+            <div class="video-play">▶</div>
+            <span class="video-platform">Instagram Reel</span>
           </div>
-          <div class="video-info">
-            <h3>Producción Audiovisual</h3>
-            <p>Próximamente en el feed</p>
-          </div>
+          <h4>Spot Más Chimba</h4>
+          <span class="video-views">Próximamente</span>
         </div>
         <div class="video-card">
-          <div class="video-placeholder">
-            <span>▶</span>
+          <div class="video-thumb">
+            <div class="video-play">▶</div>
+            <span class="video-platform">Instagram Reel</span>
           </div>
-          <div class="video-info">
-            <h3>Vlog / Blog</h3>
-            <p>Próximamente en el feed</p>
+          <h4>Producción Audiovisual</h4>
+          <span class="video-views">Próximamente</span>
+        </div>
+        <div class="video-card">
+          <div class="video-thumb">
+            <div class="video-play">▶</div>
+            <span class="video-platform">Instagram Reel</span>
           </div>
+          <h4>Vlog: Un día en Pamplona</h4>
+          <span class="video-views">Próximamente</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ====== REDES ====== -->
-  <section class="social" id="redes">
+  <!-- ====== SERVICES ====== -->
+  <section class="services" id="servicios">
     <div class="container">
-      <h2 class="section-title">Redes</h2>
-      <p class="section-sub">Sígueme en todas mis cuentas</p>
-      <div class="social-grid">
-        <!-- Instagram personal -->
-        <a href="https://www.instagram.com/yainer_stvn/" target="_blank" rel="noopener" class="social-card">
-          <span class="social-icon">📱</span>
-          <span class="social-label">@yainer_stvn</span>
-          <span class="social-desc">Cuenta principal</span>
-          <span class="social-platform">Instagram</span>
-        </a>
+      <h2 class="section-title">¿Qué puedo hacer por ti?</h2>
+      <p class="section-sub">Si necesitas contenido, producción o colaboración, estoy listo.</p>
+      <div class="services-grid">
+        <div class="service-card active">
+          <span class="service-icon">🎭</span>
+          <h4>Sketches & Humor</h4>
+          <p>Contenido original que engancha y se comparte. Ideal para marcas que quieren conectar con la gente.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">🎥</span>
+          <h4>Producción Audiovisual</h4>
+          <p>Grabación, edición y post-producción para reels, videos corporativos y contenido digital.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">📱</span>
+          <h4>Creación de Contenido</h4>
+          <p>Estrategia de contenido para redes: blogs visuales, stories interactivas, carruseles.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">🤝</span>
+          <h4>Colaboraciones</h4>
+          <p>Abierto a colaborar con marcas, creadores y artistas. Hagamos algo chimba juntos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Instagram audiovisual -->
-        <a href="https://www.instagram.com/yainer_audiovisual/" target="_blank" rel="noopener" class="social-card">
-          <span class="social-icon">🎥</span>
-          <span class="social-label">@yainer_audiovisual</span>
-          <span class="social-desc">Producción y edición</span>
-          <span class="social-platform">Instagram</span>
-        </a>
-
-        <!-- Instagram artista -->
-        <a href="https://www.instagram.com/elrojoyainer/" target="_blank" rel="noopener" class="social-card">
-          <span class="social-icon">🎨</span>
-          <span class="social-label">@elrojoyainer</span>
-          <span class="social-desc">Sketches, blogs, arte</span>
-          <span class="social-platform">Instagram</span>
-        </a>
-
-        <!-- Facebook -->
-        <a href="https://www.facebook.com/profile.php?id=61581500931484" target="_blank" rel="noopener" class="social-card">
-          <span class="social-icon">💬</span>
-          <span class="social-label">Yainer Conde</span>
-          <span class="social-desc">Facebook</span>
-          <span class="social-platform">Facebook</span>
-        </a>
+  <!-- ====== ABOUT (dark section) ====== -->
+  <section class="about-dark" id="about">
+    <div class="about-dark-container">
+      <div class="about-dark-text">
+        <h2>Creador de contenido,<br>audiovisual y <span class="accent">0 estrés</span></h2>
+        <p>
+          De Pamplona, Norte de Santander. Me muevo entre el humor, los sketches, los blogs
+          y la producción audiovisual. Creo que el contenido debe sentirse auténtico, sin
+          forzarlo. Si algo no fluye, no es por ahí.
+        </p>
+        <p>
+          Manejo tres cuentas, tres personalidades, una sola misión: crear contenido que
+          valga la pena ver. Mi estilo es relajado pero intencional. Minimalista pero con
+          personalidad. Colombiano hasta los huesos.
+        </p>
+        <a href="#contacto" class="btn btn-primary">Hablemos</a>
+      </div>
+      <div class="about-dark-img">
+        <div class="about-img-frame">
+          <img src="assets/yainer-profile.svg" alt="Yainer" onerror="this.style.opacity='0.3'">
+        </div>
+        <div class="about-float-tag">📍 Pamplona, Col</div>
       </div>
     </div>
   </section>
 
   <!-- ====== CONTACTO ====== -->
-  <section class="contact" id="contacto">
+  <section class="contact-section" id="contacto">
     <div class="container">
-      <h2 class="section-title">Contacto</h2>
-      <p class="section-sub">¿Colaboraciones, eventos, producciones? Escríbeme.</p>
+      <h2 class="section-title">¿Hablamos?</h2>
+      <p class="section-sub">Colaboraciones, eventos, producciones, o solo saludar. Escríbeme sin pena.</p>
       <div class="contact-card">
-        <span class="contact-icon">✉️</span>
-        <a href="mailto:elrojoyainer@gmail.com" class="contact-email">elrojoyainer@gmail.com</a>
-        <p class="contact-hint">(cambia este email por el real)</p>
+        <div class="contact-icon-wrap">
+          <span>✉️</span>
+        </div>
+        <h3>Correo electrónico</h3>
+        <a href="mailto:elrojoyainer@gmail.com" class="contact-mail">elrojoyainer@gmail.com</a>
+        <span class="contact-hint">(cambia este email por el real cuando lo tengas)</span>
       </div>
     </div>
   </section>
@@ -203,36 +245,30 @@
   <!-- ====== FOOTER ====== -->
   <footer class="footer">
     <div class="container">
-      <p class="footer-name">elrojoyainer</p>
-      <p class="footer-tagline">Párchese 0 estrés — Pamplona, Colombia</p>
-      <div class="footer-links">
-        <a href="https://www.instagram.com/yainer_stvn/" target="_blank" rel="noopener">@yainer_stvn</a>
-        <a href="https://www.instagram.com/yainer_audiovisual/" target="_blank" rel="noopener">@yainer_audiovisual</a>
-        <a href="https://www.instagram.com/elrojoyainer/" target="_blank" rel="noopener">@elrojoyainer</a>
-        <a href="https://www.facebook.com/profile.php?id=61581500931484" target="_blank" rel="noopener">Facebook</a>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>Yainer</h3>
+          <p>Párchese 0 estrés. Pamplona, Colombia.</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://www.instagram.com/yainer_stvn/" target="_blank" rel="noopener">@yainer_stvn</a>
+          <a href="https://www.instagram.com/yainer_audiovisual/" target="_blank" rel="noopener">@yainer_audiovisual</a>
+          <a href="https://www.instagram.com/elrojoyainer/" target="_blank" rel="noopener">@elrojoyainer</a>
+          <a href="https://www.facebook.com/profile.php?id=61581500931484" target="_blank" rel="noopener">Facebook</a>
+        </div>
       </div>
-      <p class="footer-copy">&copy; 2026 elrojoyainer. Todos los derechos reservados.</p>
+      <div class="footer-bot">
+        <p>&copy; 2026 Yainer. Todos los derechos reservados.</p>
+      </div>
     </div>
   </footer>
 
-  <!-- ====== SCRIPTS (solo menú hamburguesa) ====== -->
+  <!-- Script mínimo para menú hamburguesa -->
   <script>
-    (function() {
-      var t = document.getElementById('nav-toggle');
-      var l = document.getElementById('nav-links');
-      if (t && l) {
-        t.addEventListener('click', function() {
-          l.classList.toggle('nav-open');
-          t.classList.toggle('active');
-        });
-      }
-      var links = l ? l.querySelectorAll('a') : [];
-      for (var i = 0; i < links.length; i++) {
-        links[i].addEventListener('click', function() {
-          l.classList.remove('nav-open');
-          t.classList.remove('active');
-        });
-      }
+    (function(){
+      var t=document.getElementById('nav-toggle'),l=document.getElementById('nav-links');
+      if(t&&l){t.addEventListener('click',function(){l.classList.toggle('open');t.classList.toggle('active')});
+      l.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){l.classList.remove('open');t.classList.remove('active')})})}
     })();
   </script>
 
