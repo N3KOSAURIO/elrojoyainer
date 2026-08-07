@@ -1,273 +1,1003 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yainer — Creador de Contenido | Pamplona</title>
-  <meta name="description" content="Sketches, humor, blogs y producción audiovisual. De Pamplona, Colombia. Párchese 0 estrés.">
-  <meta name="theme-color" content="#C67B5C">
-  <meta property="og:title" content="Yainer — Creador de Contenido">
-  <meta property="og:description" content="Sketches, humor, blogs y producción audiovisual. Párchese 0 estrés.">
-  <meta property="og:type" content="website">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yainer — Creador de Contenido | Pamplona</title>
+
+    <!-- libraries CSS -->
+    <link rel="stylesheet" href="assets/font/flaticon_jio_-_influencer.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/vendor/splide/splide.min.css">
+    <link rel="stylesheet" href="assets/vendor/plyr/plyr.css">
+    <link rel="stylesheet" href="assets/vendor/slim-select/slimselect.css">
+    <link rel="stylesheet" href="assets/vendor/no-ui-slider/nouislider.min.css">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="description" content="Sketches, humor, blogs y producción audiovisual. De Pamplona, Colombia. Párchese 0 estrés.">
 </head>
+
 <body>
+    <!-- sidebar -->
+    <div class="jo-sidebar">
+        <div>
+            <!-- heading -->
+            <div class="jo-sidebar__heading d-flex justify-content-between align-items-center">
+                <a href="#"><img src="assets/img/logo.svg" alt="Yainer" class="logo"></a>
+                <button type="button" class="jo-sidebar-close-btn"><i class="flaticon-add-plus-button"></i></button>
+            </div>
 
-  <!-- HEADER -->
-  <header class="header" id="header">
-    <div class="header-inner">
-      <a href="#inicio" class="logo">Yainer</a>
-      <nav class="nav" id="nav">
-        <a href="#inicio">Inicio</a>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#videos">Videos</a>
-        <a href="#redes">Redes</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-      <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">
-        <span></span><span></span><span></span>
-      </button>
+            <!-- mobile menu -->
+            <div class="jo-header-nav-in-mobile"></div>
+        </div>
+
+        <div>
+            <a href="about.html" class="jo-btn"><i class="flaticon-add-plus-button"></i>Sígueme</a>
+            <!-- socials -->
+            <div class="tt-footer-top__socials jo-footer-top__socials jo-sidebar-socials justify-content-start justify-content-sm-end">
+                <a href="#"><i class="flaticon-facebook-1"></i></a>
+                <a href="#"><i class="flaticon-twitter"></i></a>
+                <a href="#"><i class="flaticon-social-media"></i></a>
+                <a href="#"><i class="flaticon-youtube-1"></i></a>
+            </div>
+        </div>
     </div>
-  </header>
 
-  <main>
+    <!-- HEADER SECTION START -->
+    <header class="jo-header">
+        <a href="index.html"><img src="assets/img/logo.svg" alt="Yainer"></a>
+        <div class="jo-header-right">
+            <div class="jo-header-nav">
+                <div class="to-go-to-sidebar-in-mobile">
+                    <nav>
+                        <a href="index.html">Inicio</a>
+                        <a href="about.html">Sobre mí</a>
+                        <div class="has-sub-menu relative">
+                            <a role="button">Videos</a>
 
-    <!-- HERO -->
-    <section class="hero" id="inicio">
-      <div class="hero-grid">
-        <div class="hero-text">
-          <span class="hero-badge">📍 Pamplona, Norte de Santander</span>
-          <h1 class="hero-title">
-            Soy <span class="hero-name">Yainer</span>
-          </h1>
-          <p class="hero-subtitle">
-            Creador de contenido, sketches, blogs y producción audiovisual.
-            <strong>Párchese 0 estrés.</strong>
-          </p>
-          <div class="hero-btns">
-            <a href="#redes" class="btn btn-primary">Mis redes</a>
-            <a href="#contacto" class="btn btn-outline">Contactar</a>
-          </div>
+                            <ul class="jo-header-submenu">
+                                <li><a href="videos-1.html">Streaming Videos 1</a></li>
+                                <li><a href="videos-2.html">Streaming Videos 2</a></li>
+                                <li><a href="videos-3.html">Streaming Videos 3</a></li>
+                                <li><a href="video-details.html">Streaming Video Details</a></li>
+                            </ul>
+                        </div>
+                        <div class="has-sub-menu relative">
+                            <a role="button">Más</a>
+
+                            <ul class="jo-header-submenu">
+                                <li><a href="video-shop.html">Video Shop</a></li>
+                                <li><a href="video-shop-details.html">Video Shop Details</a></li>
+                                <li><a href="service.html">Services</a></li>
+                                <li><a href="service-details.html">Service Details</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                                <li><a href="register.html">Sign Up</a></li>
+                                <li><a href="login.html">Sign in</a></li>
+                                <li><a href="pricing.html">Pricing</a></li>
+                            </ul>
+                        </div>
+                        <div class="has-sub-menu relative">
+                            <a role="button">Blog</a>
+
+                            <ul class="jo-header-submenu">
+                                <li><a href="blog.html">Blogs</a></li>
+                                <li><a href="blog-details.html">Blog Details</a></li>
+                            </ul>
+                        </div>
+                        <a href="contact.html">Contacto</a>
+
+                    </nav>
+                </div>
+            </div>
+            <div class="d-flex gap-2">
+                <a href="about.html" class="jo-btn"><i class="flaticon-add-plus-button"></i>Sígueme</a>
+                <button class="jo-header-sidebar-open-btn jo-btn px-3 d-inline-block d-lg-none"><i class="flaticon-menu"></i></button>
+            </div>
         </div>
-        <div class="hero-img">
-          <div class="hero-avatar">
-            <span class="hero-emoji">🎬</span>
-          </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <main>
+        <!-- BANNER SECTION START -->
+        <section class="jo-banner">
+            <div class="jo-banner-container">
+                <div class="row gx-0 gy-4 align-items-center">
+                    <div class="col-lg-7">
+                        <div class="jo-banner__txt">
+                            <div class="jo-banner__notifi">
+                                <img src="assets/img/user-dp-2.png" alt="img">
+                                <span>Yainer Conde</span>
+                                <span class="icon"><img src="assets/img/love.svg" alt="icon"></span>
+                            </div>
+                            <h1 class="jo-banner__title"><span>Soy <span class="styled">Yainer</span></span><span>Creador de Contenido | Pamplona</span></h1>
+                            <div class="jo-banner__btns">
+                                <a href="#" class="jo-btn">Sobre mí</a>
+                                <a href="#" class="jo-btn">Contactar</a>
+                            </div>
+
+                            <!-- vector -->
+                            <img src="assets/img/jo-banner-vector-1.svg" alt="vector" class="vector">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="jo-banner__img jo-contact__img">
+                            <img src="assets/img/FB_IMG_1786072182453.jpg" alt="Image">
+
+                            <div class="jo-banner__followers">
+                                <span class="number">74K</span>
+                                <span class="txt">Followers</span>
+                            </div>
+                            <div class="jo-banner__notifi">
+                                <img src="assets/img/user-dp-2.png" alt="img">
+                                <span>Yainer Conde</span>
+                                <span class="icon"><img src="assets/img/love.svg" alt="icon"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/img/jo-banner-vector-2.svg" alt="vector" class="vector">
+        </section>
+        <!-- BANNER SECTION END -->
+
+
+        <!-- SOCIAL LINKS SECTION START -->
+        <section class="jo-social-links">
+            <div class="jo-container">
+                <div class="row g-sm-4 g-3">
+                    <!-- single social -->
+                    <div class="col-md-4 col-6 col-xxs-12">
+                        <div class="jo-social-link">
+                            <div class="icon"><img src="assets/img/social-icon-2.png" alt="Social Media Icon"></div>
+                            <div class="txt">
+                                <h5>Instagram Personal</h5>
+                                <span>@yainer_stvn</span>
+                            </div>
+                            <a href="https://www.instagram.com/yainer_stvn/" class="jo-btn">Seguir</a>
+                        </div>
+                    </div>
+
+                    <!-- single social -->
+                    <div class="col-md-4 col-6 col-xxs-12">
+                        <div class="jo-social-link">
+                            <div class="icon"><img src="assets/img/social-icon-2.png" alt="Social Media Icon"></div>
+                            <div class="txt">
+                                <h5>Instagram Audiovisual</h5>
+                                <span>@yainer_audiovisual</span>
+                            </div>
+                            <a href="https://www.instagram.com/yainer_audiovisual/" class="jo-btn">Seguir</a>
+                        </div>
+                    </div>
+
+                    <!-- single social -->
+                    <div class="col-md-4 col-6 col-xxs-12">
+                        <div class="jo-social-link">
+                            <div class="icon"><img src="assets/img/social-icon-3.png" alt="Social Media Icon"></div>
+                            <div class="txt">
+                                <h5>Instagram Arte</h5>
+                                <span>@elrojoyainer</span>
+                            </div>
+                            <a href="https://www.instagram.com/elrojoyainer/" class="jo-btn">Seguir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SOCIAL LINKS SECTION END -->
+
+
+        <!-- REELS SECTION START -->
+        <section class="jo-reels">
+            <div class="jo-container">
+                <div class="jo-reels-heading">
+                    <button class="jo-slider-nav-btn jo-reels-slider-prev"><i class="flaticon-left-arrow"></i></button>
+                    <h2 class="jo-section-title">Latest Video Reels</h2>
+                    <button class="jo-slider-nav-btn jo-reels-slider-next"><i class="flaticon-right-arrow"></i></button>
+                </div>
+            </div>
+            <div class="jo-reels-container">
+                <div class="jo-reels-slider swiper">
+                    <div class="swiper-wrapper">
+                        <!-- single reel -->
+                        <div class="swiper-slide">
+                            <div class="jo-reel">
+                                <div class="jo-reel-video position-relative">
+                                    <video controls poster="assets/img/reel-thumb-1.jpg" src="https://videos.pexels.com/video-files/3402899/3402899-sd_506_960_25fps.mp4"></video>
+                                    <a href="#" class="link"><img src="assets/img/social-icon-1.png" alt="platform logo">Facebook Reel</a>
+                                </div>
+                                <div class="jo-reel-txt">
+                                    <h5 class="jo-reel-title"><a href="#">Sketch: El amigo que solo...</a></h5>
+                                    <div class="jo-reel-info">
+                                        <span><i class="flaticon-bell"></i></span>
+                                        <span>Próximamente</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- single reel -->
+                        <div class="swiper-slide">
+                            <div class="jo-reel">
+                                <div class="jo-reel-video position-relative">
+                                    <video controls poster="assets/img/reel-thumb-2.jpg" src="https://videos.pexels.com/video-files/3402899/3402899-sd_506_960_25fps.mp4"></video>
+                                    <a href="#" class="link"><img src="assets/img/social-icon-1.png" alt="platform logo">Facebook Reel</a>
+                                </div>
+                                <div class="jo-reel-txt">
+                                    <h5 class="jo-reel-title"><a href="#">Sketch: El amigo que solo...</a></h5>
+                                    <div class="jo-reel-info">
+                                        <span><i class="flaticon-bell"></i></span>
+                                        <span>Próximamente</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- single reel -->
+                        <div class="swiper-slide">
+                            <div class="jo-reel">
+                                <div class="jo-reel-video position-relative">
+                                    <video controls poster="assets/img/reel-thumb-3.jpg" src="https://videos.pexels.com/video-files/3402899/3402899-sd_506_960_25fps.mp4"></video>
+                                    <a href="#" class="link"><img src="assets/img/social-icon-1.png" alt="platform logo">Facebook Reel</a>
+                                </div>
+                                <div class="jo-reel-txt">
+                                    <h5 class="jo-reel-title"><a href="#">Producción Audiovisual</a></h5>
+                                    <div class="jo-reel-info">
+                                        <span><i class="flaticon-bell"></i></span>
+                                        <span>Próximamente</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- single reel -->
+                        <div class="swiper-slide">
+                            <div class="jo-reel">
+                                <div class="jo-reel-video position-relative">
+                                    <video controls poster="assets/img/reel-thumb-4.jpg" src="https://videos.pexels.com/video-files/3402899/3402899-sd_506_960_25fps.mp4"></video>
+                                    <a href="#" class="link"><img src="assets/img/social-icon-1.png" alt="platform logo">Facebook Reel</a>
+                                </div>
+                                <div class="jo-reel-txt">
+                                    <h5 class="jo-reel-title"><a href="#">Vlog: Pamplona</a></h5>
+                                    <div class="jo-reel-info">
+                                        <span><i class="flaticon-bell"></i></span>
+                                        <span>Próximamente</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- single reel -->
+                        <div class="swiper-slide">
+                            <div class="jo-reel">
+                                <div class="jo-reel-video position-relative">
+                                    <video controls poster="assets/img/reel-thumb-5.jpg" src="https://videos.pexels.com/video-files/3402899/3402899-sd_506_960_25fps.mp4"></video>
+                                    <a href="#" class="link"><img src="assets/img/social-icon-1.png" alt="platform logo">Facebook Reel</a>
+                                </div>
+                                <div class="jo-reel-txt">
+                                    <h5 class="jo-reel-title"><a href="#">Sketch 2</a></h5>
+                                    <div class="jo-reel-info">
+                                        <span><i class="flaticon-bell"></i></span>
+                                        <span>Próximamente</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- single reel -->
+                        <div class="swiper-slide">
+                            <div class="jo-reel">
+                                <div class="jo-reel-video position-relative">
+                                    <video controls poster="assets/img/reel-thumb-1.jpg" src="https://videos.pexels.com/video-files/3402899/3402899-sd_506_960_25fps.mp4"></video>
+                                    <a href="#" class="link"><img src="assets/img/social-icon-1.png" alt="platform logo">Facebook Reel</a>
+                                </div>
+                                <div class="jo-reel-txt">
+                                    <h5 class="jo-reel-title"><a href="#">Spot 2</a></h5>
+                                    <div class="jo-reel-info">
+                                        <span><i class="flaticon-bell"></i></span>
+                                        <span>Próximamente</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- single reel -->
+                        <div class="swiper-slide">
+                            <div class="jo-reel">
+                                <div class="jo-reel-video position-relative">
+                                    <video controls poster="assets/img/reel-thumb-2.jpg" src="https://videos.pexels.com/video-files/3402899/3402899-sd_506_960_25fps.mp4"></video>
+                                    <a href="#" class="link"><img src="assets/img/social-icon-1.png" alt="platform logo">Facebook Reel</a>
+                                </div>
+                                <div class="jo-reel-txt">
+                                    <h5 class="jo-reel-title"><a href="#">Sketch: El amigo que solo...</a></h5>
+                                    <div class="jo-reel-info">
+                                        <span><i class="flaticon-bell"></i></span>
+                                        <span>Próximamente</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- REELS SECTION END -->
+
+
+        <!-- SERVICES SECTION START -->
+        <section class="jo-services">
+            <div class="jo-container">
+                <div class="jo-services-wrapper">
+                    <div class="heading">
+                        <h2 class="jo-section-title mb-0">¿Qué puedo hacer por ti?</h2>
+                        <a href="#" class="jo-btn">Ver todos</a>
+                    </div>
+
+                    <div class="jo-services-tabs-wrapper">
+                        <div class="jo-services-tab-navs">
+                            <button class="tab-nav active" data-tab="service-1">Sketches & Humor</button>
+                            <button class="tab-nav" data-tab="service-2">Producción Audiovisual</button>
+                            <button class="tab-nav" data-tab="service-3">Creación de Contenido</button>
+                            <button class="tab-nav" data-tab="service-4">Colaboraciones</button>
+                            <button class="tab-nav" data-tab="service-5">Gestión de Redes</button>
+                        </div>
+
+                        <div class="tabs-container">
+                            <!-- single tab / tab 01 -->
+                            <div class="tt-tab active" id="service-1">
+                                <div class="tt-service-tab">
+                                    <!-- img -->
+                                    <div class="img">
+                                        <img src="assets/img/service.jpg" alt="service image">
+                                    </div>
+
+                                    <!-- txt -->
+                                    <div class="txt">
+                                        <h5 class="title">Sketches & Humor</h5>
+                                        <p class="descr">Sketches originales, contenido humorístico y videos virales que conectan con tu audiencia. Desde ideas hasta producción final.</p>
+                                        <ul class="list">
+                                            <li>Creación de sketches originales</li>
+                                            <li>Guión y producción de humor</li>
+                                            <li>Edición para redes sociales</li>
+                                            <li>Contenido viral orgánico</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- single tab / tab 02 -->
+                            <div class="tt-tab" id="service-2">
+                                <div class="tt-service-tab">
+                                    <!-- img -->
+                                    <div class="img">
+                                        <img src="assets/img/service.jpg" alt="service image">
+                                    </div>
+
+                                    <!-- txt -->
+                                    <div class="txt">
+                                        <h5 class="title">Producción Audiovisual</h5>
+                                        <p class="descr">Producción y edición de video profesional para creadores que quieren destacar. Cámaras, iluminación y postproducción.</p>
+                                        <ul class="list">
+                                            <li>Grabación con equipo profesional</li>
+                                            <li>Edición y postproducción</li>
+                                            <li>Colorización y sonido</li>
+                                            <li>Motion graphics básicos</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- single tab / tab 03 -->
+                            <div class="tt-tab" id="service-3">
+                                <div class="tt-service-tab">
+                                    <!-- img -->
+                                    <div class="img">
+                                        <img src="assets/img/service.jpg" alt="service image">
+                                    </div>
+
+                                    <!-- txt -->
+                                    <div class="txt">
+                                        <h5 class="title">Creación de Contenido</h5>
+                                        <p class="descr">Creación de contenido auténtico para redes sociales: Reels, TikToks, y videos que reflejan tu estilo personal sin forzarlo.</p>
+                                        <ul class="list">
+                                            <li>Planeación de contenido mensual</li>
+                                            <li>Grabación de Reels y TikToks</li>
+                                            <li>Fotografía para redes</li>
+                                            <li>Estrategia de publicación</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- single tab / tab 04 -->
+                            <div class="tt-tab" id="service-4">
+                                <div class="tt-service-tab">
+                                    <!-- img -->
+                                    <div class="img">
+                                        <img src="assets/img/service.jpg" alt="service image">
+                                    </div>
+
+                                    <!-- txt -->
+                                    <div class="txt">
+                                        <h5 class="title">Colaboraciones</h5>
+                                        <p class="descr">Colaboraciones con marcas que se alinean con contenido auténtico. Integraciones naturales que aportan valor real a la audiencia.</p>
+                                        <ul class="list">
+                                            <li>Colaboraciones con marcas</li>
+                                            <li>Contenido patrocinado</li>
+                                            <li>Reviews de productos</li>
+                                            <li>Campañas en redes sociales</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- single tab / tab 05 -->
+                            <div class="tt-tab" id="service-5">
+                                <div class="tt-service-tab">
+                                    <!-- img -->
+                                    <div class="img">
+                                        <img src="assets/img/service.jpg" alt="service image">
+                                    </div>
+
+                                    <!-- txt -->
+                                    <div class="txt">
+                                        <h5 class="title">Gestión de Redes</h5>
+                                        <p class="descr">Gestión completa de redes sociales: publicaciones, interacción, crecimiento orgánico y analíticas para mejorar resultados.</p>
+                                        <ul class="list">
+                                            <li>Gestión de Instagram y TikTok</li>
+                                            <li>Calendario de publicaciones</li>
+                                            <li>Respuesta a comentarios</li>
+                                            <li>Reportes de crecimiento</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SERVICES SECTION END -->
+
+
+        <!-- intro & live -->
+        <div class="jo-intro-lives-wrapper">
+            <!-- INTRO SECTION START -->
+            <section class="jo-intro">
+                <div class="jo-container">
+                    <div class="row align-items-center">
+                        <!-- txt -->
+                        <div class="col-xl-6 col-lg-7 col-8">
+                            <div class="jo-intro__txt">
+                                <h2 class="jo-section-title">Creador de contenido & productor audiovisual de Pamplona</h2>
+                                <p class="jo-intro__descr">Soy Yainer, de Pamplona, Norte de Santander. Me muevo entre el humor, los sketches, los blogs y la producción audiovisual. Creo que el contenido debe sentirse auténtico, sin forzarlo. Párchese 0 estrés.</p>
+
+                                <ul class="jo-intro__list">
+                                    <li>Sketches y humor original</li>
+                                    <li>Producción y edición de video</li>
+                                    <li>Contenido auténtico para redes</li>
+                                    <li>Colaboraciones con marcas</li>
+                                </ul>
+
+                                <a href="contact.html" class="jo-btn">Hablemos</a>
+                            </div>
+                        </div>
+
+                        <!-- img -->
+                        <div class="col-xl-6 col-lg-5 col-4">
+                            <div class="jo-intro__img">
+                                <a href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg" data-fslightbox class="play-btn"><i class="flaticon-play"></i></a>
+                                <img src="assets/img/intro-img.jpg" alt="intro image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- vector -->
+                <img src="assets/img/intro-vector.svg" alt="vector" class="jo-intro__vector">
+            </section>
+            <!-- INTRO SECTION END -->
+
+
+            <!-- UPCOMING LIVES SECTION START -->
+            <section class="jo-upcoming-lives">
+                <div class="jo-container">
+                    <!-- heading -->
+                    <div class="jo-upcoming-lives__heading">
+                        <h2 class="jo-section-title">Próximos lives</h2>
+                    </div>
+
+                    <div>
+                        <!-- live card -->
+                        <div class="jo-upcoming-live">
+                            <div class="jo-upcoming-live__img">
+                                <img src="assets/img/umcoming-live-1.jpg" alt="live image">
+                            </div>
+                            <div class="jo-upcoming-live__txt">
+                                <a href="#" class="platform-tag"><img src="assets/img/social-icon-1.png" alt="platform logo">Instagram Live</a>
+                                <h5 class="title">Sketch en vivo: El amigo que...</h5>
+                                <span class="date">25 Jun, 2024</span>
+                                <p class="descr">consectetur adipiscing elit. Donec non mattis nulla, in ultrices diam. Curabitur nec pharetra nunc. Nunc nec pellentesque nisl. Ut non mauris bibendum nunc pharetra laoreet sed eget mauris. Donec eget fermentum libero, ac aliquet lectus.</p>
+                                <a href="checkout.html" class="jo-btn">Reservar</a>
+                            </div>
+                        </div>
+
+                        <!-- live card -->
+                        <div class="jo-upcoming-live">
+                            <div class="jo-upcoming-live__img">
+                                <img src="assets/img/umcoming-live-2.jpg" alt="live image">
+                            </div>
+                            <div class="jo-upcoming-live__txt">
+                                <a href="#" class="platform-tag"><img src="assets/img/social-icon-4.png" alt="platform logo">Youtube Live</a>
+                                <h5 class="title">Sketch en vivo: El amigo que...</h5>
+                                <span class="date">25 Jun, 2024</span>
+                                <p class="descr">consectetur adipiscing elit. Donec non mattis nulla, in ultrices diam. Curabitur nec pharetra nunc. Nunc nec pellentesque nisl. Ut non mauris bibendum nunc pharetra laoreet sed eget mauris. Donec eget fermentum libero, ac aliquet lectus.</p>
+                                <a href="checkout.html" class="jo-btn">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- UPCOMING LIVES SECTION END -->
         </div>
-      </div>
-    </section>
 
-    <!-- SOBRE MÍ -->
-    <section class="about" id="sobre-mi">
-      <div class="container">
-        <h2 class="section-title">Sobre mí</h2>
-        <div class="about-grid">
-          <div class="about-text">
-            <p>
-              Soy Yainer, creador de contenido de <strong>Pamplona, Norte de Santander</strong>.
-              Me muevo entre el humor, los sketches, los blogs y la producción audiovisual.
-            </p>
-            <p>
-              Creo que el contenido debe sentirse auténtico, sin forzarlo.
-              Si algo no fluye, no es por ahí. Mi frase es simple:
-              <strong>párchese 0 estrés.</strong>
-            </p>
-            <ul class="about-list">
-              <li>Sketches y humor original</li>
-              <li>Producción y edición de video</li>
-              <li>Blogs y contenido digital</li>
-              <li>Colaboraciones con marcas</li>
-            </ul>
-          </div>
-          <div class="about-visual">
-            <div class="about-card">
-              <span class="about-icon">🎭</span>
-              <strong>Sketches</strong>
+
+        <!-- VIDEOS SECTION START -->
+        <section class="jo-videos">
+            <div class="jo-container">
+                <!-- heading -->
+                <div class="jo-videos__heading">
+                    <h2 class="jo-section-title">Últimos videos premium</h2>
+                    <a href="videos-1.html" class="jo-btn jo-videos__btn"><i class="flaticon-premium-quality"></i> Ver todos</a>
+                </div>
             </div>
-            <div class="about-card">
-              <span class="about-icon">🎥</span>
-              <strong>Audiovisual</strong>
+
+            <!-- video cards -->
+            <div class="jo-videos-slider splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="jo-video-card">
+                                <img src="assets/img/jo-video-1.jpg" alt="Video Thumbnail" class="jo-video-card__img">
+
+                                <div class="jo-video-card__txt">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg" data-fslightbox="videos" class="jo-video-card__btn"><i class="flaticon-play"></i></a>
+                                        <span class="jo-video-card__premium-tag"><i class="flaticon-premium-quality"></i></span>
+                                    </div>
+
+                                    <div class="bottom">
+                                        <span class="price">$5.00</span>
+                                        <h5><a href="video-details.html" class="jo-video-card__title">Sketch Exclusivo</a></h5>
+                                        <div class="tt-video__infos jo-video-card__infos">
+                                            <span>16M views</span>
+                                            <span>49 minutes ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="splide__slide">
+                            <div class="jo-video-card">
+                                <img src="assets/img/jo-video-2.jpg" alt="Video Thumbnail" class="jo-video-card__img">
+
+                                <div class="jo-video-card__txt">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg" data-fslightbox="videos" class="jo-video-card__btn"><i class="flaticon-play"></i></a>
+                                        <span class="jo-video-card__premium-tag"><i class="flaticon-premium-quality"></i></span>
+                                    </div>
+
+                                    <div class="bottom">
+                                        <span class="price">$5.00</span>
+                                        <h5><a href="video-details.html" class="jo-video-card__title">Sketch Exclusivo</a></h5>
+                                        <div class="tt-video__infos jo-video-card__infos">
+                                            <span>16M views</span>
+                                            <span>49 minutes ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="splide__slide">
+                            <div class="jo-video-card">
+                                <img src="assets/img/jo-video-3.jpg" alt="Video Thumbnail" class="jo-video-card__img">
+
+                                <div class="jo-video-card__txt">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg" data-fslightbox="videos" class="jo-video-card__btn"><i class="flaticon-play"></i></a>
+                                        <span class="jo-video-card__premium-tag"><i class="flaticon-premium-quality"></i></span>
+                                    </div>
+
+                                    <div class="bottom">
+                                        <span class="price">$5.00</span>
+                                        <h5><a href="video-details.html" class="jo-video-card__title">Sketch Exclusivo</a></h5>
+                                        <div class="tt-video__infos jo-video-card__infos">
+                                            <span>16M views</span>
+                                            <span>49 minutes ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="about-card">
-              <span class="about-icon">✍️</span>
-              <strong>Blogs</strong>
+
+            <div class="jo-videos-slider-2 splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="jo-video-card">
+                                <img src="assets/img/jo-video-4.jpg" alt="Video Thumbnail" class="jo-video-card__img">
+
+                                <div class="jo-video-card__txt">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg" data-fslightbox="videos" class="jo-video-card__btn"><i class="flaticon-play"></i></a>
+                                        <span class="jo-video-card__premium-tag d-none"><i class="flaticon-premium-quality"></i></span>
+                                    </div>
+
+                                    <div class="bottom">
+                                        <span class="price">Gratis</span>
+                                        <h5><a href="video-details.html" class="jo-video-card__title">Sketch Exclusivo</a></h5>
+                                        <div class="tt-video__infos jo-video-card__infos">
+                                            <span>16M views</span>
+                                            <span>49 minutes ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="splide__slide">
+                            <div class="jo-video-card">
+                                <img src="assets/img/jo-video-5.jpg" alt="Video Thumbnail" class="jo-video-card__img">
+
+                                <div class="jo-video-card__txt">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg" data-fslightbox="videos" class="jo-video-card__btn"><i class="flaticon-play"></i></a>
+                                        <span class="jo-video-card__premium-tag"><i class="flaticon-premium-quality"></i></span>
+                                    </div>
+
+                                    <div class="bottom">
+                                        <span class="price">$5.00</span>
+                                        <h5><a href="video-details.html" class="jo-video-card__title">Sketch Exclusivo</a></h5>
+                                        <div class="tt-video__infos jo-video-card__infos">
+                                            <span>16M views</span>
+                                            <span>49 minutes ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="splide__slide">
+                            <div class="jo-video-card">
+                                <img src="assets/img/jo-video-6.jpg" alt="Video Thumbnail" class="jo-video-card__img">
+
+                                <div class="jo-video-card__txt">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg" data-fslightbox="videos" class="jo-video-card__btn"><i class="flaticon-play"></i></a>
+                                        <span class="jo-video-card__premium-tag"><i class="flaticon-premium-quality"></i></span>
+                                    </div>
+
+                                    <div class="bottom">
+                                        <span class="price">$5.00</span>
+                                        <h5><a href="video-details.html" class="jo-video-card__title">Sketch Exclusivo</a></h5>
+                                        <div class="tt-video__infos jo-video-card__infos">
+                                            <span>16M views</span>
+                                            <span>49 minutes ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="about-card">
-              <span class="about-icon">🤝</span>
-              <strong>Colaboraciones</strong>
+        </section>
+        <!-- VIDEOS SECTION END -->
+
+
+        <!-- CONTACT SECTION START -->
+        <section class="jo-contact">
+            <div class="top">
+                <div class="jo-container">
+                    <div class="row align-items-end">
+                        <!-- contact form -->
+                        <div class="col-lg-6">
+                            <div class="jo-contact-form-wrapper">
+                                <img src="assets/img/contact-form-icon.svg" alt="icon" class="icon">
+                                <h2 class="jo-section-title">Trabajemos juntos en tu próximo proyecto</h2>
+                                <p>consectetur adipiscing elit. Donec non mattis nulla, in ultrices diam. Curabitur nec pharetra nunc. Nunc nec pellentesque nisl. Ut non mauris bibendum</p>
+                                <form action="#" class="jo-contact-form">
+                                    <div>
+                                        <label for="jo-contact-name">Your Name</label>
+                                        <input type="text" name="name" id="jo-contact-name" placeholder="Tu nombre">
+                                    </div>
+
+                                    <div>
+                                        <label for="jo-contact-email">Your Email Address</label>
+                                        <input type="email" name="email" id="jo-contact-email" placeholder="Tu correo">
+                                    </div>
+
+                                    <div>
+                                        <label for="jo-contact-message">Write Message</label>
+                                        <textarea name="message" id="jo-contact-message" placeholder="Escribe tu mensaje..."></textarea>
+                                    </div>
+
+                                    <button type="submit" class="jo-btn">Enviar mensaje</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- img -->
+                        <div class="col-lg-6 d-lg-block d-none">
+                            <div class="jo-contact__img">
+                                <img src="assets/img/contact-img.png" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+
+            <div class="bottom">
+                <div class="jo-container overflow-hidden">
+                    <div class="row gx-5">
+                        <div class="col-lg-6 blank-space d-none d-lg-block"></div>
+
+                        <div class="col-lg-6">
+                            <h5 class="jo-partners-title">Marcas con las que he trabajado</h5>
+                            <div class="jo-partners-slider swiper">
+                                <div class="swiper-wrapper">
+                                    <!-- single partner -->
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/partner-1.png" alt="Partner Image">
+                                    </div>
+
+                                    <!-- single partner -->
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/partner-2.png" alt="Partner Image">
+                                    </div>
+
+                                    <!-- single partner -->
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/partner-3.png" alt="Partner Image">
+                                    </div>
+
+                                    <!-- single partner -->
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/partner-4.png" alt="Partner Image">
+                                    </div>
+
+                                    <!-- single partner -->
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/partner-1.png" alt="Partner Image">
+                                    </div>
+
+                                    <!-- single partner -->
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/partner-2.png" alt="Partner Image">
+                                    </div>
+                                </div>
+
+                                <div class="jo-partners-slider-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CONTACT SECTION END -->
+
+
+        <!-- ARTICLES SECTION START -->
+        <section class="jo-articles">
+            <div class="jo-container">
+                <div class="text-center">
+                    <h2 class="jo-section-title">Últimos artículos y noticias</h2>
+                </div>
+
+                <div class="row g-sm-4 g-3">
+                    <!-- single article -->
+                    <div class="col-lg-4 col-6 col-xxs-12">
+                        <div class="jo-article">
+                            <div class="jo-article__img">
+                                <img src="assets/img/jo-article-1.jpg" alt="Article Image">
+
+                                <div class="date">
+                                    <span class="number">10</span>
+                                    <span class="txt">June</span>
+                                </div>
+                            </div>
+
+                            <div class="jo-article__txt">
+                                <div class="jo-article__infos flex gap-x-[30px] mb-[16px]">
+                                    <!-- single info -->
+                                    <div class="jo-article__info">
+                                        <span class="icon"><i class="flaticon-user"></i></span>
+                                        <span class="text font-normal text-[14px] text-etGray">Por Yainer</span>
+                                    </div>
+
+                                    <!-- single info -->
+                                    <div class="jo-article__info">
+                                        <span class="icon"><i class="flaticon-price-tag"></i></span>
+                                        <span class="text font-normal text-[14px] text-etGray">Contenido</span>
+                                    </div>
+                                </div>
+
+                                <h4 class="jo-article__title"><a href="blog-details.html">Many of those Products Offer the Potential</a></h4>
+
+                                <a href="blog-details.html" class="jo-article__btn">Read More <span class="icon"><i class="flaticon-arrow-right-1"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single article -->
+                    <div class="col-lg-4 col-6 col-xxs-12">
+                        <div class="jo-article">
+                            <div class="jo-article__img">
+                                <img src="assets/img/jo-article-2.jpg" alt="Article Image">
+
+                                <div class="date">
+                                    <span class="number">10</span>
+                                    <span class="txt">June</span>
+                                </div>
+                            </div>
+
+                            <div class="jo-article__txt">
+                                <div class="jo-article__infos flex gap-x-[30px] mb-[16px]">
+                                    <!-- single info -->
+                                    <div class="jo-article__info">
+                                        <span class="icon"><i class="flaticon-user"></i></span>
+                                        <span class="text font-normal text-[14px] text-etGray">Por Yainer</span>
+                                    </div>
+
+                                    <!-- single info -->
+                                    <div class="jo-article__info">
+                                        <span class="icon"><i class="flaticon-price-tag"></i></span>
+                                        <span class="text font-normal text-[14px] text-etGray">Contenido</span>
+                                    </div>
+                                </div>
+
+                                <h4 class="jo-article__title"><a href="blog-details.html">Many of those Products Offer the Potential</a></h4>
+
+                                <a href="blog-details.html" class="jo-article__btn">Read More <span class="icon"><i class="flaticon-arrow-right-1"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single article -->
+                    <div class="col-lg-4 col-6 col-xxs-12">
+                        <div class="jo-article">
+                            <div class="jo-article__img">
+                                <img src="assets/img/jo-article-3.jpg" alt="Article Image">
+
+                                <div class="date">
+                                    <span class="number">10</span>
+                                    <span class="txt">June</span>
+                                </div>
+                            </div>
+
+                            <div class="jo-article__txt">
+                                <div class="jo-article__infos flex gap-x-[30px] mb-[16px]">
+                                    <!-- single info -->
+                                    <div class="jo-article__info">
+                                        <span class="icon"><i class="flaticon-user"></i></span>
+                                        <span class="text font-normal text-[14px] text-etGray">Por Yainer</span>
+                                    </div>
+
+                                    <!-- single info -->
+                                    <div class="jo-article__info">
+                                        <span class="icon"><i class="flaticon-price-tag"></i></span>
+                                        <span class="text font-normal text-[14px] text-etGray">Contenido</span>
+                                    </div>
+                                </div>
+
+                                <h4 class="jo-article__title"><a href="blog-details.html">Many of those Products Offer the Potential</a></h4>
+
+                                <a href="blog-details.html" class="jo-article__btn">Read More <span class="icon"><i class="flaticon-arrow-right-1"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ARTICLES SECTION END -->
+    </main>
+
+
+    <!-- FOOTER SECTION START -->
+    <footer class="jo-footer">
+        <div class="jo-container">
+            <!-- footer top -->
+            <div class="jo-footer-top">
+                <div class="row gx-4 gy-sm-5 gy-4 align-items-center">
+                    <div class="col-lg-3 col-6 col-xxs-12">
+                        <a href="index.html"><img src="assets/img/logo-white.svg" alt="Yainer" class="logo"></a>
+                    </div>
+                    <div class="col-lg-6 order-lg-1 order-2">
+                        <!-- nwsltr -->
+                        <form action="#" class="jo-footer-top__nwsltr">
+                            <input type="email" name="jo-nwsltr-email" id="jo-nwsltr-email" placeholder="Email Address">
+                            <button class="jo-btn" type="submit">Get Newsletter</button>
+                        </form>
+                    </div>
+                    <!-- socials -->
+                    <div class="col-lg-3 col-6 col-xxs-12 order-lg-2 order-1">
+                        <div class="tt-footer-top__socials jo-footer-top__socials justify-content-start justify-content-sm-end">
+                            <a href="#"><i class="flaticon-facebook-1"></i></a>
+                            <a href="#"><i class="flaticon-twitter"></i></a>
+                            <a href="#"><i class="flaticon-social-media"></i></a>
+                            <a href="#"><i class="flaticon-youtube-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer middle -->
+            <div class="jo-footer-middle">
+                <div class="row g-4">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="jo-footer-widget jo-footer-contact">
+                            <h5 class="jo-footer-widget__title">Contacto</h5>
+                            <a href="mailto:elrojoyainer@gmail.com">elrojoyainer@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                        <div class="jo-footer-widget jo-footer-links">
+                            <h5 class="jo-footer-widget__title">Categorías</h5>
+                            <div class="links">
+                                <a href="#">Sketches</a>
+                                <a href="#">Humor</a>
+                                <a href="#">Audiovisual</a>
+                                <a href="#">Blogs</a>
+                                <a href="#">Arte</a>
+                                <a href="#">Colaboraciones</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                        <div class="jo-footer-widget jo-footer-gallery">
+                            <h5 class="jo-footer-widget__title">Instagram feed</h5>
+                            <div class="imgs flex-wrap">
+                                <img src="assets/img/footer-img-1.jpg" alt="Footer Image">
+                                <img src="assets/img/footer-img-2.jpg" alt="Footer Image">
+                                <img src="assets/img/footer-img-3.jpg" alt="Footer Image">
+                                <img src="assets/img/footer-img-4.jpg" alt="Footer Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer bottom -->
+            <div class="tt-footer-bottom text-center">
+                <p class="mb-0">© 2026 Yainer. Todos los derechos reservados.</p>
+            </div>
         </div>
-      </div>
-    </section>
+    </footer>
+    <!-- FOOTER SECTION END -->
 
-    <!-- SERVICIOS -->
-    <section class="services" id="servicios">
-      <div class="container">
-        <h2 class="section-title">¿Qué puedo hacer por ti?</h2>
-        <div class="services-grid">
-          <div class="service-card">
-            <span class="service-icon">🎭</span>
-            <h3>Sketches & Humor</h3>
-            <p>Contenido original y auténtico que conecta con la gente. Ideal para marcas que buscan llegar con humor.</p>
-          </div>
-          <div class="service-card">
-            <span class="service-icon">🎥</span>
-            <h3>Producción Audiovisual</h3>
-            <p>Grabación, edición y post-producción. Reels, videos corporativos y contenido para redes.</p>
-          </div>
-          <div class="service-card">
-            <span class="service-icon">📱</span>
-            <h3>Creación de Contenido</h3>
-            <p>Estrategia de contenido digital: blogs visuales, stories interactivas y carruseles para Instagram.</p>
-          </div>
-          <div class="service-card">
-            <span class="service-icon">🤝</span>
-            <h3>Colaboraciones</h3>
-            <p>Abierto a trabajar con marcas, creadores y artistas. Hagamos algo chimba juntos.</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- VIDEOS -->
-    <section class="videos" id="videos">
-      <div class="container">
-        <h2 class="section-title">Últimos videos</h2>
-        <p class="section-sub">Próximamente — sígueme en Instagram para ver mi contenido más reciente.</p>
-        <div class="videos-grid">
-          <div class="video-card">
-            <div class="video-thumb">
-              <span class="video-play">▶</span>
-            </div>
-            <h4>Sketch: El amigo que solo...</h4>
-            <span class="video-tag">Próximamente</span>
-          </div>
-          <div class="video-card">
-            <div class="video-thumb">
-              <span class="video-play">▶</span>
-            </div>
-            <h4>Spot Más Chimba</h4>
-            <span class="video-tag">Próximamente</span>
-          </div>
-          <div class="video-card">
-            <div class="video-thumb">
-              <span class="video-play">▶</span>
-            </div>
-            <h4>Producción Audiovisual</h4>
-            <span class="video-tag">Próximamente</span>
-          </div>
-          <div class="video-card">
-            <div class="video-thumb">
-              <span class="video-play">▶</span>
-            </div>
-            <h4>Vlog: Pamplona</h4>
-            <span class="video-tag">Próximamente</span>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- libraries JS -->
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/splide/splide.min.js"></script>
+    <script src="assets/vendor/splide/splide-extension-auto-scroll.min.js"></script>
+    <script src="assets/vendor/slim-select/slimselect.min.js"></script>
+    <script src="assets/vendor/plyr/plyr.polyfilled.js"></script>
+    <script src="assets/vendor/no-ui-slider/nouislider.min.js"></script>
+    <script src="assets/vendor/fs-lightbox/fslightbox.js"></script>
 
-    <!-- REDES -->
-    <section class="social" id="redes">
-      <div class="container">
-        <h2 class="section-title">Mis redes</h2>
-        <p class="section-sub">Sígueme en todas mis cuentas. Contenido diferente en cada una.</p>
-        <div class="social-grid">
-          <a href="https://www.instagram.com/yainer_stvn/" target="_blank" rel="noopener" class="social-card">
-            <span class="social-icon">📱</span>
-            <div class="social-info">
-              <strong>@yainer_stvn</strong>
-              <span>Instagram Personal</span>
-            </div>
-            <span class="social-arrow">→</span>
-          </a>
-          <a href="https://www.instagram.com/yainer_audiovisual/" target="_blank" rel="noopener" class="social-card">
-            <span class="social-icon">🎥</span>
-            <div class="social-info">
-              <strong>@yainer_audiovisual</strong>
-              <span>Instagram Audiovisual</span>
-            </div>
-            <span class="social-arrow">→</span>
-          </a>
-          <a href="https://www.instagram.com/elrojoyainer/" target="_blank" rel="noopener" class="social-card">
-            <span class="social-icon">🎨</span>
-            <div class="social-info">
-              <strong>@elrojoyainer</strong>
-              <span>Instagram Arte & Sketches</span>
-            </div>
-            <span class="social-arrow">→</span>
-          </a>
-          <a href="https://www.facebook.com/jainerstiven.lozadaconde" target="_blank" rel="noopener" class="social-card">
-            <span class="social-icon">💬</span>
-            <div class="social-info">
-              <strong>Yainer Conde</strong>
-              <span>Facebook</span>
-            </div>
-            <span class="social-arrow">→</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section class="contact" id="contacto">
-      <div class="container">
-        <h2 class="section-title">Trabajemos juntos</h2>
-        <p class="section-sub">Colaboraciones, eventos, producciones. Escríbeme sin pena.</p>
-        <div class="contact-card">
-          <span class="contact-icon">✉️</span>
-          <h3>Correo electrónico</h3>
-          <a href="mailto:elrojoyainer@gmail.com" class="contact-mail">elrojoyainer@gmail.com</a>
-          <p class="contact-note">(email de contacto — pendiente de confirmar)</p>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <a href="#inicio" class="footer-logo">Yainer</a>
-        <p>Párchese 0 estrés. Pamplona, Colombia.</p>
-        <div class="footer-links">
-          <a href="https://www.instagram.com/elrojoyainer/" target="_blank" rel="noopener">Instagram</a>
-          <a href="https://www.facebook.com/jainerstiven.lozadaconde" target="_blank" rel="noopener">Facebook</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2026 Yainer. Todos los derechos reservados.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    // Mobile menu toggle
-    (function(){
-      var btn = document.getElementById('menu-btn');
-      var nav = document.getElementById('nav');
-      btn.addEventListener('click', function(){
-        btn.classList.toggle('open');
-        nav.classList.toggle('open');
-      });
-      nav.querySelectorAll('a').forEach(function(a){
-        a.addEventListener('click', function(){
-          btn.classList.remove('open');
-          nav.classList.remove('open');
-        });
-      });
-      // Header scroll effect
-      var header = document.getElementById('header');
-      var lastScroll = 0;
-      window.addEventListener('scroll', function(){
-        var now = window.scrollY;
-        header.classList.toggle('scrolled', now > 50);
-        lastScroll = now;
-      });
-    })();
-  </script>
+    <!-- custom js -->
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
