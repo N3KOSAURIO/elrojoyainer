@@ -8,20 +8,22 @@
 - **GitHub Pages**: https://n3kosaurio.github.io/elrojoyainer/
 - **Vault**: `Projects/Personales/Elrojoyainer/`
 
-## Lo que hay
+## Lo que hay (v2.0)
 
-- `index.html` + `styles.css` — 3 iteraciones de diseño (la última basada en Influtics)
+- `index.html` + `styles.css` — Rediseño completo con paleta terracota colombiano
+- Single page, 6 secciones: Hero, Sobre mí, Servicios, Videos, Redes, Contacto
+- Mobile-first, vanilla HTML+CSS (cero frameworks)
+- Placeholders: emoji + CSS gradients (sin fotos reales aún)
+- Datos reales: 3 cuentas IG + Facebook, frase "Párchese 0 estrés"
 - `Yainer-Recomendaciones.md` — guía de 395 líneas para crecer en IG (también en Drive)
-- `assets/` — placeholder SVG de perfil + iconos SVG de redes
-- Git con 5 commits en `main`
+- Git con 6 commits en `main`
 
-## Lo que falta / próxima sesión
+## Lo que falta
 
-- **nye NO le gustó el diseño actual** ("saturación"). Va a proporcionar el código fuente completo
-  del template que quiere usar (probablemente descargado de Influtics u otro)
-- nye dará la ruta local del código → adaptarlo con datos de Yainer
-- Actualizar en GitHub y hacer push
-- Las fotos de Yainer aún no se agregaron (Facebook bloquea sin login, el usuario las subirá a Drive)
+- Fotos reales de Yainer (reemplazar placeholders emoji)
+- Videos/embeds de sus reels de Instagram
+- Confirmar email real de contacto (placeholder: elrojoyainer@gmail.com)
+- Las fotos de Yainer aún no se agregaron (el usuario las subirá a Drive)
 
 ## Datos de Yainer
 
@@ -34,14 +36,12 @@
   - IG artístico: https://www.instagram.com/elrojoyainer/
   - Facebook: https://www.facebook.com/jainerstiven.lozadaconde
 - **Email placeholder**: elrojoyainer@gmail.com
-- **Drive**: gdrive: Proyectos/elrojoyainer/Yainer-Recomendaciones.md
 
 ## Reglas importantes
 
 - NO usar Vercel (el plan gratuito se reserva para el hermano DJ)
 - GitHub Pages para este proyecto
 - HTML+CSS puro (sin frameworks JS pesados)
-- Diseño: el usuario quiere algo muy similar a Influtics pero sin "saturación"
 
 ## Hermano DJ
 
