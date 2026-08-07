@@ -229,8 +229,6 @@ h1, h2, h3 { line-height: 1.25; }
   transform: translateY(-4px);
   box-shadow: 0 12px 32px rgba(198,123,92,0.15);
 }
-.social-card--fb { opacity: 0.6; cursor: default; }
-.social-card--fb:hover { border-color: transparent; transform: none; box-shadow: none; }
 .social-icon { font-size: 2.5rem; }
 .social-label { font-size: 1.1rem; font-weight: 700; color: var(--dark); }
 .social-desc { font-size: 0.9rem; color: var(--muted); }
@@ -240,7 +238,6 @@ h1, h2, h3 { line-height: 1.25; }
   background: linear-gradient(135deg, #E1306C, #F77737);
   color: #fff;
 }
-.social-card--fb .social-platform { background: #1877F2; }
 
 /* ---------- CONTACT ---------- */
 .contact {
