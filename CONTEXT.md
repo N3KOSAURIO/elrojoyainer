@@ -24,7 +24,7 @@ Página web sencilla para Yainer, creador de contenido de Pamplona, Colombia. Fu
   - Instagram personal: [@yainer_stvn](https://www.instagram.com/yainer_stvn/)
   - Instagram audiovisual: [@yainer_audiovisual](https://www.instagram.com/yainer_audiovisual/)
   - Instagram artístico: [@elrojoyainer](https://www.instagram.com/elrojoyainer/)
-  - Facebook: [Yainer Conde](https://www.facebook.com/profile.php?id=61581500931484)
+  - Facebook: [Yainer Conde](https://www.facebook.com/jainerstiven.lozadaconde)
 - **Contacto**: elrojoyainer@gmail.com (placeholder — cambiar por el real)
 
 ## Estructura de archivos
